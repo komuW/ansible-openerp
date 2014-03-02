@@ -1,0 +1,6 @@
+openerp:
+  db_host: False
+  db_port: False
+  db_user: openerp
+  db_password: False
+  workers: 4

@@ -1,0 +1,3 @@
+- name: set options for openerp
+  ini_file: dest=/etc/openerp/openerp-server.conf section=options option={{ item.key }} value={{ item.value }}
+  with_dict: openerp

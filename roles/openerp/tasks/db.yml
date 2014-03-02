@@ -1,0 +1,9 @@
+- name: create postgresql user
+  postgresql_user: name={{ openerp.db_user }} password={{ openerp.db_password or "NULL" }} role_attr_flags=CREATEDB,NOCREATEROLE,NOSUPERUSER
+  sudo_user: postgres
+  when: not openerp.db_host
+  notify: restart openerp
+- name: stop postgresql server
+  service: name=postgresql state=stopped
+  when: openerp.db_host
+  notify: restart openerp
