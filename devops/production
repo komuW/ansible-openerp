@@ -1,1 +1,1 @@
-myorderopenerp.cloudapp.net ansible_ssh_user=azureuser environment=production
+cool.cloudapp.net ansible_ssh_user=azureuser environment=production

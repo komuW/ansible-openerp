@@ -1,0 +1,19 @@
+---
+- hosts: all
+  gather_facts: no
+  sudo: yes
+
+  vars_files:
+    - ../vars/development.yml
+
+  tasks:
+
+    - include: base.yml
+
+  handlers:
+
+    - name: restart openerp #HANDLER
+      service: name=openerp state=restarted
+
+    - name: restart nginx #HANDLER
+      service: name=nginx state=restarted 

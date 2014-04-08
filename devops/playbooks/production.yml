@@ -1,0 +1,23 @@
+---
+- hosts: all
+  gather_facts: no
+  sudo: yes
+  sudo_user: azureuser
+
+  vars_files:
+    - ../vars/base.yml
+    - ../vars/production.yml
+
+  tasks:
+
+    - include: base.yml
+      sudo: yes
+      sudo_user: root
+
+  handlers:
+
+    - name: restart openerp #HANDLER
+      service: name=openerp state=restarted
+
+    - name: restart nginx #HANDLER
+      service: name=nginx state=restarted 

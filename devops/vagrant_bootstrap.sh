@@ -13,4 +13,4 @@ if [ ! $(which sshpass) ]; then
   sudo apt-get -y install sshpass
 fi
 
-PYTHONUNBUFFERED=1 ansible-playbook -i /vagrant/devops/development /vagrant/devops/site.yml
+PYTHONUNBUFFERED=1 ansible-playbook -i /vagrant/devops/development /vagrant/devops/playbooks/development.yml
