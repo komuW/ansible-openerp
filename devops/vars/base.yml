@@ -1,0 +1,20 @@
+---
+APP_NAME: myorder-openerp
+
+ADMINS: 
+  - name: samkitonyi
+    public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAIBtF5GXzIq7I3/BrtjgAPH04NXdYm+uvTU3G7TUumc4J8DHydU2TvFWSk3XZJkQC/CwvGsu4Wxtn5D765JU8e7TBL866I0Mxe5zy180jg2dYXwzt0QntRDM0JXibJQx8Utsjert0JpiNqw7ZD3DtCnZT5+DhFx8Es95HAGWVpK5jQ== sam.kitonyi@gmail.com"
+
+  - name: kelonye
+    public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDfoVzOteaprEwlGNiWKGAcVs8G+ojUUzuoShKYWF9WaxjW+gz3Po1oM1AoX7ApYta3yl3W9Fa9kx7R7Q0SSupetwdJ2NlQTQCxLQzoS2cVQVFfwzVj602ehvrUdkQsz+tWDhdVQ765ahw/1B68ATRfLJz2n69OzBBsEYoSuSbjPzXNFXaoWZROswvOe9uZbi7s9GMSyFaEN8Nzk/M3DeNb5hvxQ+Vy5NEltENVJ3ARwQe/RQb/oH5en7Xq8vtroQwC0+0yo8R4+ptcwZmIj+iq2iPQAl/5/8Y3tGstUFlxxti5tPhd33ARiN2THUjOnjHdEckP9ZoyBzD9xaAaQAbH kelonyemitchel@gmail.com"
+
+  - name: komu
+    public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDivZMybGSfs6ElZ9MIHHcgEbrXEoisniBDaSEQoD80jnmKaa/ZHbsue/0Lf2da4u2Yv/EyBhnVlK5Iawz+hssMgrUFb05vHOw0QFrkr9l6tmsAOGN10X43hjmphjLPFTEchr4rG0MHJugcHPECLX7MSZDrltMO/DdMB1rHKeU6aMi9qKxiwD6GNFUpRHYQJEmALLx1uLxJZu9qalntjF5B2tD6IH9gu78JMTGgSI3S3xhY8IT4e020fwN8c924dXc8VR01AxdTkZc5lIY2J7orYq8tHmTgdEoY089jqozWlVPre+zJxQgNHGUGXettfFI/SKbcCz45waRfPveWiPyh komu@ubuntu"
+
+REPOSITORY_HOST_KEY: "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAubiN81eDcafrgMeLzaFPsw2kNvEcqTKl/VqLat/MaB33pZy0y3rJZtnqwR2qOOvbwKZYKiEO1O6VqNEBxKvJJelCq0dTXWT5pbO2gDXC6h6QDXCaHo6pOHGPUy+YBaGQRGuSusMEASYiWunYN0vCAI8QaXnWMXNMdFP3jHAJH0eDsoiGnLPBlBp4TNm6rYI74nMzgz3B9IikW4WVK+dc8KZJZWYjAuORU3jc1c/NPskD2ASinf8v3xnfXeukU0sJ5N6m5E8VLjObPEO+mN2t/FZTMZLiFqPWc/ALSqnMnnhwrNi2rbfg/rd/IpL8Le3pSBne8+seeFVBoGqzHM9yXw=="
+
+REPOSITORY_URL: git@bitbucket.org:wezatele/myorder-openerp.git
+HOME_DIR: /home/azureuser
+APP_DIR: "{{ HOME_DIR }}/src"
+OPENERP_VERSION: 7.0
+REPO_VERSION: "feature/clean-up"
